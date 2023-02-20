@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="sp">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,105 @@
     <link rel="stylesheet" href="styles.css">
     <title>GRID Y FLEX</title>
 </head>
+
 <body>
     <!-- Consultar cual selector tiene más importancia, object-fixed, movile first, responsive design -->
+
+    <!-- OBJECT-FIXED -->
+
+    <!-- El valor object-fixed es una propiedad CSS que se puede aplicar a elementos HTML para fijar su posición en la pantalla mientras se desplaza la página. Esto significa que el elemento permanecerá visible en la misma posición relativa a la ventana del navegador, incluso si el usuario desplaza el contenido de la página. -->
+
+    <!-- MOVILE FIRST -->
+
+    <!-- El término "Mobile First" en desarrollo web se refiere a una metodología de diseño y desarrollo que prioriza la experiencia del usuario en dispositivos móviles, como smartphones y tabletas, antes de considerar la experiencia en pantallas de escritorio o laptops.
+
+    En lugar de diseñar un sitio web para una pantalla de escritorio y luego hacer ajustes para su visualización en dispositivos móviles, el enfoque "Mobile First" implica diseñar primero para dispositivos móviles y luego ampliar el diseño y la funcionalidad para pantallas más grandes.
+
+    Esto se debe a que la mayoría de las personas actualmente utilizan sus dispositivos móviles para acceder a Internet y visitar sitios web, por lo que es importante que los sitios web se diseñen y optimicen para ofrecer una experiencia de usuario satisfactoria en dispositivos móviles.
+
+    Además, el enfoque "Mobile First" también puede mejorar la velocidad de carga de un sitio web y su rendimiento en general, ya que se prioriza la carga de contenido esencial para dispositivos móviles y se minimiza el uso de recursos innecesarios. 
+    
+    EJEMPLO: 
+    /* Estilos para dispositivos móviles */
+
+    /* Encabezado */
+    .site-header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    }
+
+    .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    }
+
+    .main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    }
+
+    .main-nav li {
+    margin-right: 20px;
+    }
+
+    .main-nav li:last-child {
+    margin-right: 0;
+    }
+
+    .main-nav a {
+    color: #333;
+    text-decoration: none;
+    }
+
+    /* Contenido principal */
+    .site-main {
+    padding: 20px;
+    }
+
+
+    /* Estilos para pantallas de escritorio */
+
+    @media (min-width: 768px) {
+    /* Encabezado */
+    .site-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .main-nav {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Contenido principal */
+    .site-main {
+        max-width: 1200px;
+        margin: 80px auto 0;
+    }
+    }
+    -->
+
+    <!-- RESPONSIVE DESIGN -->
+
+    <!-- Algunas de las técnicas que se utilizan en el diseño responsive incluyen:
+
+    Media queries: Las media queries son un conjunto de reglas de CSS que permiten cambiar los estilos de un sitio web según las características del dispositivo. Por ejemplo, se pueden cambiar el tamaño de la fuente, el ancho de un contenedor, o incluso ocultar ciertos elementos en función del tamaño de pantalla.
+
+    Unidades relativas: En lugar de utilizar unidades de medida absolutas, como píxeles, Responsive Design utiliza unidades relativas como porcentajes, em y rem, lo que permite que el contenido se ajuste automáticamente al tamaño de la pantalla.
+
+    Imágenes y multimedia flexibles: Las imágenes y otros elementos multimedia en el diseño responsive se ajustan automáticamente al tamaño de la pantalla, utilizando técnicas como imágenes flexibles y videos escalables.
+
+    Layouts flexibles: En lugar de utilizar un diseño fijo, Responsive Design utiliza diseños flexibles, como grids y flexbox, que se ajustan automáticamente al tamaño de la pantalla y permiten que el contenido fluya de manera fluida.
+
+    En resumen, la metodología Responsive Design permite que los sitios web se adapten y se ajusten automáticamente a diferentes tamaños de pantalla y dispositivos, lo que garantiza una experiencia de usuario coherente y optimizada para cada dispositivo. Esto es cada vez más importante en la actualidad, ya que la mayoría de las personas utilizan diferentes dispositivos para acceder a Internet, y se espera que esta tendencia continúe en el futuro. -->
+
     <nav>
         <div class="nav-left">
             <h1>LOGO</h1>
@@ -25,10 +123,31 @@
     </nav>
     <section>
         <article>
-                <h1><strong>K onda pa' como va todo che </strong></h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam minus dolorem fugiat quo tenetur nam enim nisi, numquam natus unde impedit molestiae iure eaque, asperiores repellendus. Cumque sit nemo quaerat.</p>
-                <button><strong>More Info</strong></button>
+            <h1><strong>K onda pa' como va todo che </strong></h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam minus dolorem fugiat quo tenetur nam
+                enim nisi, numquam natus unde impedit molestiae iure eaque, asperiores repellendus. Cumque sit nemo
+                quaerat.</p>
+            <button><strong>More Info</strong></button>
+        </article>
+    </section>
+    <section>
+        <article>
+            <h1><strong>K onda pa' como va todo che </strong></h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam minus dolorem fugiat quo tenetur nam
+                enim nisi, numquam natus unde impedit molestiae iure eaque, asperiores repellendus. Cumque sit nemo
+                quaerat.</p>
+            <button><strong>More Info</strong></button>
+        </article>
+    </section>
+    <section>
+        <article>
+            <h1><strong>K onda pa' como va todo che </strong></h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam minus dolorem fugiat quo tenetur nam
+                enim nisi, numquam natus unde impedit molestiae iure eaque, asperiores repellendus. Cumque sit nemo
+                quaerat.</p>
+            <button><strong>More Info</strong></button>
         </article>
     </section>
 </body>
+
 </html>

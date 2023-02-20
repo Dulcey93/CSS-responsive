@@ -15,8 +15,16 @@ body{
 nav{
     display: flex;
     justify-content: space-between;
-    width: 100%;
     align-items: center;
+    background-color: rgba(160, 216, 212, 0.8);
+    /* uso del object-fixed */
+    position: fixed;
+    list-style: none;
+    width: 100%;
+    top:0;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    z-index: 100;
 }
 
 .nav-left, .nav-right, li{
@@ -32,7 +40,8 @@ nav{
 section{
     display: flex;
     justify-content: center;
-    height: 700px;
+    min-height: 100vh;
+    align-items: center;
 }
 
 section article{
@@ -43,6 +52,10 @@ section article{
     align-items: center;
     width: 60%;
     text-align: justify;
+    background-color: rgba(255, 255, 255, 0.229);
+    height: 400px;
+    padding: 0 90px;
+    border-radius: 6px;
 }
 
 article h1{
